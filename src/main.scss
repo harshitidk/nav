@@ -1,0 +1,47 @@
+body
+{
+    background-color: rgb(11, 11, 11);
+    color: white;
+    background-image: url('https://i.pinimg.com/originals/7d/07/a2/7d07a255678962d30d8717dcf5dbd266.gif');
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.burger 
+{
+    display: none;
+}
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 200px;
+    background: rgb(255, 72, 0);
+}
+
+ul
+{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+
+    li 
+    {
+        margin: 0px 30px;
+    }
+}
+
+.logo
+{
+    font-size: 30px;
+}
