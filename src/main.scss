@@ -6,6 +6,8 @@ body
     background-size: cover;
     padding: 0;
     margin: 0;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 a
@@ -30,6 +32,7 @@ nav
 
 ul
 {
+    position: relative;
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -44,4 +47,47 @@ ul
 .logo
 {
     font-size: 30px;
+}
+
+@media only screen and (max-width: 900px)
+{
+    nav 
+    {
+        padding: 10px 50px;
+    }
+
+    .burger
+    {
+        display: block;
+    }
+
+    ul 
+    {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(255, 72, 0);
+        padding: 0;
+        top: 30px;
+        right: 0;
+        padding: 30px 10px;
+
+        li 
+        {
+            padding: 20px 40px;
+            margin: 10px 0px;
+
+            &:active 
+            {
+                background-color: rgb(255, 108, 9);
+                border-radius: 50px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    a 
+    {
+        display: none;
+    }
 }
