@@ -70,7 +70,9 @@ ul li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background-color: #ff4800;
+    background-color: rgba(255, 72, 0, 0.429);
+    -webkit-backdrop-filter: blur(1rem);
+            backdrop-filter: blur(1rem);
     padding: 0;
     top: 30px;
     right: 0;
@@ -81,6 +83,7 @@ ul li {
     margin: 10px 0px;
   }
   ul li:active {
+    cursor: pointer;
     background-color: #ff6c09;
     border-radius: 50px;
     font-weight: bold;
@@ -88,5 +91,9 @@ ul li {
   a {
     display: none;
   }
+}
+
+.hover:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */

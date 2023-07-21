@@ -66,7 +66,8 @@ ul
         position: absolute;
         display: flex;
         flex-direction: column;
-        background-color: rgb(255, 72, 0);
+        background-color: rgba(255, 72, 0, 0.429);
+        backdrop-filter: blur(1rem);
         padding: 0;
         top: 30px;
         right: 0;
@@ -79,6 +80,7 @@ ul
 
             &:active 
             {
+                cursor: pointer;
                 background-color: rgb(255, 108, 9);
                 border-radius: 50px;
                 font-weight: bold;
@@ -90,4 +92,9 @@ ul
     {
         display: none;
     }
+}
+
+.hover:hover
+{
+    cursor: pointer;
 }
